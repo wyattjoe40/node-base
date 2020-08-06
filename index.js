@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 //app.set('views', path.join(__dirname, 'views'));
 
 app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support for get URL params
 
 app.get('/', (req, res) => res.render('index'));
 
